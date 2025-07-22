@@ -1,0 +1,73 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.slider-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.slider-row label {
+  width: 80px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+
+
+
+.slider-value {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+
+.button-group {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #09478a;  
+  color: white;               
+  border: none;               
+  padding: 6px 12px;          
+  font-size: 14px;            
+  border-radius: 4px;         
+  cursor: pointer;           
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002c5a;  /
+}
+
+table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+thead {
+  background-color: #ddd;
+}

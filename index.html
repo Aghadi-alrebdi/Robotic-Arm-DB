@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robot Arm Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Robot Arm Control Panel</h1>
+
+  <div class="slider-row">
+    <label for="motor1">Motor 1:</label>
+    <input type="range" id="motor1" min="0" max="180" value="90" oninput="updateValue(1)">
+    <span id="value1" class="slider-value">90</span>
+  </div>
+
+  <div class="slider-row">
+    <label for="motor2">Motor 2:</label>
+    <input type="range" id="motor2" min="0" max="180" value="90" oninput="updateValue(2)">
+    <span id="value2" class="slider-value">90</span>
+  </div>
+
+  <div class="slider-row">
+    <label for="motor3">Motor 3:</label>
+    <input type="range" id="motor3" min="0" max="180" value="90" oninput="updateValue(3)">
+    <span id="value3" class="slider-value">90</span>
+  </div>
+
+  <div class="slider-row">
+    <label for="motor4">Motor 4:</label>
+    <input type="range" id="motor4" min="0" max="180" value="90" oninput="updateValue(4)">
+    <span id="value4" class="slider-value">90</span>
+  </div>
+
+  <div class="slider-row">
+    <label for="motor5">Motor 5:</label>
+    <input type="range" id="motor5" min="0" max="180" value="90" oninput="updateValue(5)">
+    <span id="value5" class="slider-value">90</span>
+  </div>
+
+  <div class="slider-row">
+    <label for="motor6">Motor 6:</label>
+    <input type="range" id="motor6" min="0" max="180" value="90" oninput="updateValue(6)">
+    <span id="value6" class="slider-value">90</span>
+  </div>
+
+  <div class="button-group">
+    <button onclick="resetValues()">Reset</button>
+    <button onclick="savePose()">Save Pose</button>
+    <button onclick="runPose()">Run</button>
+  </div>
+
+  <table id="poseTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Servo 1</th>
+        <th>Servo 2</th>
+        <th>Servo 3</th>
+        <th>Servo 4</th>
+        <th>Servo 5</th>
+        <th>Servo 6</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
